@@ -99,28 +99,14 @@ public class Main {
                     }
                     
                 break;
+                
+                case 4:
+                    System.out.println("Adios.");
                     
             }
         }while(opcion!=4);
-        
-        
-        
-       
-        
-        /*
-         * No creamos los objetos para manejar objetos,
-         * ya que sino siempre existiria el fichero
-         */
-        
-        
+           
     }
     
-    public static void muestraDatos(ObjectInputStream ois) throws IOException, ClassNotFoundException{
-        //Cuando se acabe el ficheor saltara la excepcion EOFException
-        while(true){
-            Inmueble ref=(Inmueble)ois.readObject();
-            
-            System.out.println("La direccion del inmueble es: " +ref.getDireccion() + ", situado en " +ref.getCiudad() + " y de tipo: " +ref.getTipo());
-        }
-    }
+   
 }
